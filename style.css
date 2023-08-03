@@ -1,0 +1,108 @@
+*{
+    margin: 0;  
+    padding: 0;
+}
+
+
+body{
+
+    transition: 2s;
+}
+
+
+.mainContainer{
+    
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:bisque ;
+
+}
+
+
+.miniContainer{
+
+    height: 20vh;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    border: none;
+    
+
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    
+
+
+}
+
+button{
+    
+    height: 50px;
+    width: 90%;
+    
+    color: white;
+    border-radius: 5px;
+  
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(188, 125, 48) ;
+
+}
+
+/* For Mobile devices */
+
+@media screen and (max-width: 576px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .miniContainer {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+/* For tablet devices */
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .miniContainer {
+        width: 70vw;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+
+
+
